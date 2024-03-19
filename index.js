@@ -27,7 +27,6 @@ io.on('connection', (socket) => {
 })
 
 const port = 3000;
-const host ='103.41.206.224'
-server.listen(host, port, () => {
-    console.log(`Server is running ${host}:${port}`);
+server.listen(port, () => {
+    console.log(`Server is running ${port}`);
 });
