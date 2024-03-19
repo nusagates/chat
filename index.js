@@ -5,9 +5,7 @@ const {Server} = require('socket.io');
 const {createServer} = require("http");
 const server = http.createServer(app);
 const httpServer = createServer(app);
-const io = require('socket.io')(server, {
-    cors: {origin: "*"}
-});
+const io = require('socket.io')(server);
 app.get('/', (req, res) => {
     res.send('<h1>Hello world</h1>');
 });
