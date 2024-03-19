@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 let isConnected = false
 io.on('connection', (socket) => {
     isConnected = socket.connected
-    console.log('connection');
+    console.log('connection s');
 
     socket.on("message", (arg, callback) => {
         socket.broadcast.emit('message', arg)
